@@ -1,16 +1,22 @@
-//
-//  ContentView.swift
-//  TransitionAnimationsTest
-//
-//  Created by Oleg on 02.02.2022.
-//
-
 import SwiftUI
+import NavigationStack
 
 struct ContentView: View {
+    @State var mode = Mode.home
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        ZStack {
+            switch mode {
+            case .home:
+                NavigationStackView(transitionType: .custom(.move(edge: .leading))) {
+                    HomeView(mode: $mode)
+                }
+            case .menu:
+                MenuView(mode: $mode)
+                    .transition(.move(edge: .leading))
+            }
+        }
+        .animation(.easeInOut, value: mode)
     }
 }
 

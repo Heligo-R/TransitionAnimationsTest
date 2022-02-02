@@ -11,6 +11,15 @@
 		AF8B3A3D27AAC54400D95CFA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8B3A3C27AAC54400D95CFA /* ContentView.swift */; };
 		AF8B3A3F27AAC54600D95CFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF8B3A3E27AAC54600D95CFA /* Assets.xcassets */; };
 		AF8B3A4227AAC54600D95CFA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF8B3A4127AAC54600D95CFA /* Preview Assets.xcassets */; };
+		AF8B3A5127AAC5E200D95CFA /* Mode.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8B3A5027AAC5E200D95CFA /* Mode.swift */; };
+		AF8B3A5527AAC6FB00D95CFA /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8B3A5427AAC6FB00D95CFA /* NavigationController.swift */; };
+		AF8B3A5727AAC7B700D95CFA /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8B3A5627AAC7B700D95CFA /* MenuView.swift */; };
+		AF8B3A5927AAC80E00D95CFA /* DismissTransitionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8B3A5827AAC80E00D95CFA /* DismissTransitionController.swift */; };
+		AF8B3A5B27AAC82400D95CFA /* PresentTransitionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8B3A5A27AAC82400D95CFA /* PresentTransitionController.swift */; };
+		AF8B3A5D27AAC84F00D95CFA /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8B3A5C27AAC84F00D95CFA /* HomeView.swift */; };
+		AF8B3A5F27AACADC00D95CFA /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8B3A5E27AACADC00D95CFA /* UIApplication+Extension.swift */; };
+		AF8B3A6227AAE32F00D95CFA /* NavigationStack in Frameworks */ = {isa = PBXBuildFile; productRef = AF8B3A6127AAE32F00D95CFA /* NavigationStack */; };
+		AF8B3A6427AAE60D00D95CFA /* NavigationStackMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8B3A6327AAE60D00D95CFA /* NavigationStackMenuView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +28,14 @@
 		AF8B3A3C27AAC54400D95CFA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AF8B3A3E27AAC54600D95CFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF8B3A4127AAC54600D95CFA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AF8B3A5027AAC5E200D95CFA /* Mode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mode.swift; sourceTree = "<group>"; };
+		AF8B3A5427AAC6FB00D95CFA /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		AF8B3A5627AAC7B700D95CFA /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MenuView.swift; path = TransitionAnimationsTest/MenuView.swift; sourceTree = SOURCE_ROOT; };
+		AF8B3A5827AAC80E00D95CFA /* DismissTransitionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DismissTransitionController.swift; path = TransitionAnimationsTest/DismissTransitionController.swift; sourceTree = SOURCE_ROOT; };
+		AF8B3A5A27AAC82400D95CFA /* PresentTransitionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PresentTransitionController.swift; path = TransitionAnimationsTest/PresentTransitionController.swift; sourceTree = SOURCE_ROOT; };
+		AF8B3A5C27AAC84F00D95CFA /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeView.swift; path = TransitionAnimationsTest/HomeView.swift; sourceTree = SOURCE_ROOT; };
+		AF8B3A5E27AACADC00D95CFA /* UIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
+		AF8B3A6327AAE60D00D95CFA /* NavigationStackMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NavigationStackMenuView.swift; path = TransitionAnimationsTest/NavigationStackMenuView.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF8B3A6227AAE32F00D95CFA /* NavigationStack in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,10 +69,15 @@
 		AF8B3A3927AAC54400D95CFA /* TransitionAnimationsTest */ = {
 			isa = PBXGroup;
 			children = (
-				AF8B3A3A27AAC54400D95CFA /* TransitionAnimationsTestApp.swift */,
-				AF8B3A3C27AAC54400D95CFA /* ContentView.swift */,
 				AF8B3A3E27AAC54600D95CFA /* Assets.xcassets */,
+				AF8B3A3C27AAC54400D95CFA /* ContentView.swift */,
+				AF8B3A4827AAC57D00D95CFA /* Controllers */,
 				AF8B3A4027AAC54600D95CFA /* Preview Content */,
+				AF8B3A3A27AAC54400D95CFA /* TransitionAnimationsTestApp.swift */,
+				AF8B3A4D27AAC58F00D95CFA /* Views */,
+				AF8B3A5027AAC5E200D95CFA /* Mode.swift */,
+				AF8B3A5427AAC6FB00D95CFA /* NavigationController.swift */,
+				AF8B3A5E27AACADC00D95CFA /* UIApplication+Extension.swift */,
 			);
 			path = TransitionAnimationsTest;
 			sourceTree = "<group>";
@@ -65,6 +88,27 @@
 				AF8B3A4127AAC54600D95CFA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AF8B3A4827AAC57D00D95CFA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AF8B3A5827AAC80E00D95CFA /* DismissTransitionController.swift */,
+				AF8B3A5A27AAC82400D95CFA /* PresentTransitionController.swift */,
+			);
+			name = Controllers;
+			path = ../../projects/TransitionAnimationsTest/TransitionAnimationsTest/Controllers;
+			sourceTree = "<group>";
+		};
+		AF8B3A4D27AAC58F00D95CFA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AF8B3A5627AAC7B700D95CFA /* MenuView.swift */,
+				AF8B3A5C27AAC84F00D95CFA /* HomeView.swift */,
+				AF8B3A6327AAE60D00D95CFA /* NavigationStackMenuView.swift */,
+			);
+			name = Views;
+			path = ../../projects/TransitionAnimationsTest/TransitionAnimationsTest/Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +127,9 @@
 			dependencies = (
 			);
 			name = TransitionAnimationsTest;
+			packageProductDependencies = (
+				AF8B3A6127AAE32F00D95CFA /* NavigationStack */,
+			);
 			productName = TransitionAnimationsTest;
 			productReference = AF8B3A3727AAC54400D95CFA /* TransitionAnimationsTest.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +158,9 @@
 				Base,
 			);
 			mainGroup = AF8B3A2E27AAC54400D95CFA;
+			packageReferences = (
+				AF8B3A6027AAE32F00D95CFA /* XCRemoteSwiftPackageReference "swiftui-navigation-stack" */,
+			);
 			productRefGroup = AF8B3A3827AAC54400D95CFA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,6 +187,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF8B3A5727AAC7B700D95CFA /* MenuView.swift in Sources */,
+				AF8B3A5B27AAC82400D95CFA /* PresentTransitionController.swift in Sources */,
+				AF8B3A5927AAC80E00D95CFA /* DismissTransitionController.swift in Sources */,
+				AF8B3A5527AAC6FB00D95CFA /* NavigationController.swift in Sources */,
+				AF8B3A6427AAE60D00D95CFA /* NavigationStackMenuView.swift in Sources */,
+				AF8B3A5127AAC5E200D95CFA /* Mode.swift in Sources */,
+				AF8B3A5D27AAC84F00D95CFA /* HomeView.swift in Sources */,
+				AF8B3A5F27AACADC00D95CFA /* UIApplication+Extension.swift in Sources */,
 				AF8B3A3D27AAC54400D95CFA /* ContentView.swift in Sources */,
 				AF8B3A3B27AAC54400D95CFA /* TransitionAnimationsTestApp.swift in Sources */,
 			);
@@ -339,6 +397,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AF8B3A6027AAE32F00D95CFA /* XCRemoteSwiftPackageReference "swiftui-navigation-stack" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/matteopuc/swiftui-navigation-stack";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AF8B3A6127AAE32F00D95CFA /* NavigationStack */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AF8B3A6027AAE32F00D95CFA /* XCRemoteSwiftPackageReference "swiftui-navigation-stack" */;
+			productName = NavigationStack;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AF8B3A2F27AAC54400D95CFA /* Project object */;
 }
